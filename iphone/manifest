@@ -1,4 +1,13 @@
-                    GNU GENERAL PUBLIC LICENSE
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: Titanium native module for recording audio files with the desired encoding on iOS devices.
+author: Robert Fromont
+license: GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
@@ -672,3 +681,11 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+copyright: Copyright 2016 New Zealand Institute of Language, Brain and Behaviour
+
+# these should not be edited
+name: iosaudiorecorder
+moduleid: nzilbb.iosaudiorecorder
+guid: c83581fb-f9b4-4a23-b768-2a2be52ec10a
+platform: iphone
+minsdk: 5.1.2.GA
