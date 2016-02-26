@@ -128,6 +128,15 @@
     NSURL *soundFileURL = [NSURL fileURLWithPath:_filePath];
     NSLog(@"[INFO] iosaudiorecorder:URL: %@", soundFileURL);
     
+    if (_audioRecorder != nil)
+    {
+        if (_audioRecorder.recording)
+        {
+            [_audioRecorder stop];
+        }
+        [_audioRecorder dealloc];
+    }
+    
     NSError *error = nil;
     
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
